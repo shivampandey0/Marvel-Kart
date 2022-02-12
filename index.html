@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Marvel UI Component Library -->
+    <link rel="stylesheet" href="https://marvel-ui.vercel.app/css/marvel-ui.css">
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Home | Marvel-Kart</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="navbar">
+            <a href="./index.html" class="logo" role="img">
+                <span>MARVEL</span><span>KART<i class="fa-solid fa-cart-shopping"></i></span>
+            </a>
+            <nav class="nav flex-row align-cntr">
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass icon"></i>
+                    <input class="search-field" type="text" placeholder="Search..." aria-label="Search Products">
+                </div>
+                <ul>
+                    <li class="mx-2">
+                        <a href="#" class="btn btn-link">Login</a>
+                    </li>
+                    <li class="mx-2">
+                        <a href="#" class="wishlist">
+                            <div class="badge-wrapper">
+                                <i class="fas fa-heart icon"></i>
+                                <span class="badge badge-info">0</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="mx-2">
+                        <a href="#" class="cart">
+                            <div class="badge-wrapper">
+                                <i class="fas fa-shopping-cart icon"></i>
+                                <span class="badge badge-info">0</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="m-auto">
+        <section class="home-hero dark-overlay">
+            <img class="img-responsive" src="./assets/landing-page-bg.jpeg" alt="Landing Page Background">
+        </section>
+
+        <section class="mx-8">
+            <h3 class="txt-center my-4">Shop by Featured OG Avengers</h3>
+            <div class="categories flex-row flex-wrap justify-cntr gap-2">
+                <a href="#" class="flex-column flex-center ">
+                    <img class="home-featured" src="./assets/captain.webp" alt="Capatin America">
+                    <div class="category-name">Capatin America</div>
+                </a>
+
+                <a href="#" class="flex-column flex-center">
+                    <img class="home-featured" src="./assets/ironman.webp" alt="Ironman">
+                    <div class="category-name">Ironman</div>
+                </a>
+                <a href="#" class="flex-column flex-center">
+                    <img class="home-featured" src="./assets/widow.webp" alt="Black Widow">
+                    <div class="category-name">Black Widow</div>
+                </a>
+                <a href="#" class="flex-column flex-center">
+                    <img class="home-featured" src="./assets/hulk.webp" alt="Hulk">
+                    <div class="category-name">Hulk</div>
+                </a>
+                <a href="#" class="flex-column flex-center">
+                    <img class="home-featured" src="./assets/thor.webp" alt="Thor">
+                    <div class="category-name">Thor</div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer flex-column flex-center">
+        <h4>Made with <span class="secondary-text-color">&lt;/&gt;</span> by Shivam Pandey</h4>
+        <ul class="gap-1 my-1">
+            <li>
+                <a href="https://github.com/shivampandey0" class="footer-social" target="_blank"><i class="fab fa-github "></i></a>
+            </li>
+            <li>
+                <a href="https://twitter.com/ErShivamPandey" class="footer-social" target="_blank"><i class="fab fa-twitter "></i></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/shivampandey0/" class="footer-social" target="_blank"><i class="fab fa-linkedin-in "></i></a>
+            </li>
+        </ul>
+        <div class="txt-small"> © 2022
+            <div class="logo">
+                <span class="txt-sm">MARVEL</span><span class="txt-sm">KART</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
