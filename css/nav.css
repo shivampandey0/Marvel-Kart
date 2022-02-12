@@ -3,6 +3,7 @@
   top: 0;
   background-color: var(--white);
   box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+  z-index: var(--z-4);
 }
 
 /* full navbar */
@@ -16,6 +17,7 @@
 }
 
 .navbar,
+.footer > ul,
 .nav > ul {
   display: flex;
   align-items: center;
@@ -23,7 +25,6 @@
 }
 
 /* Logo */
-
 .logo {
   display: inline-block;
   font-size: var(--size-8);
@@ -92,7 +93,7 @@ li > .btn:hover {
 @media screen and (max-width: 940px) {
   .navbar {
     flex-direction: column;
-    gap: var(--size-2);
+    gap: var(--size-4);
   }
   .search-field {
     width: 100%;
@@ -101,6 +102,6 @@ li > .btn:hover {
 
 @media screen and (max-width: 600px) {
   html {
-    font-size: 60%;
+    font-size: 80%;
   }
 }
