@@ -1,4 +1,9 @@
 /* Footer */
+.footer > ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
 
 .footer {
   background-color: var(--primary-light);
