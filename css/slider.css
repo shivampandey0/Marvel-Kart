@@ -1,0 +1,10 @@
+.slider {
+  width: 100%;
+}
+
+.price-indicator {
+  opacity: 0.5;
+  display: flex;
+  justify-content: space-between;
+  
+}
