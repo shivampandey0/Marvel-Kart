@@ -1,0 +1,62 @@
+@import "./slider.css";
+
+.cataloge {
+  display: grid;
+  grid-template-columns: minmax(var(--size-52), 1fr) 4fr;
+}
+
+.filter-section {
+  height: fit-content;
+  position: sticky;
+  overflow-y: auto;
+  margin: var(--scale-1);
+  padding: var(--scale-1);
+  background-color: var(--white);
+}
+
+.filter-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Filters */
+
+.filter-list-item {
+  display: flex;
+  align-items: center;
+  gap: var(--scale-1);
+  margin: var(--size-2);
+}
+
+/* Products */
+
+.products-section {
+  background-color: var(--white);
+  padding: var(--scale-1);
+  margin: var(--scale-1);
+}
+
+.products-container {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--scale-1);
+  margin: var(--scale-1);
+}
+
+/* Products cards */
+
+.card {
+  width: calc(var(--scale-6) * 3);
+}
+
+.card-image {
+  flex-basis: 60%;
+}
+
+.card-title {
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: var(--weight-bold);
+}
