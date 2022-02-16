@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Marvel UI Component Library -->
+    <link
+      rel="stylesheet"
+      href="https://marvel-ui.vercel.app/css/marvel-ui.css"
+    />
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="../style.css" />
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="../css/cart.css" />
+    <title>Cart | Marvel-Kart</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="nav-brand">
+          <button class="btn hamburger-menu">
+            <i class="fas fa-bars icon"></i>
+          </button>
+          <a href="../index.html" class="nav-logo" role="img">
+            <span>MARVEL</span
+            ><span>KART<i class="fa-solid fa-cart-shopping"></i></span>
+          </a>
+        </div>
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass icon"></i>
+          <input
+            class="search-field"
+            type="search"
+            placeholder="Search..."
+            aria-label="Search Products"
+          />
+        </div>
+        <div class="nav mobile-nav">
+          <button class="btn nav-close-btn">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <ul class="menu">
+            <li>
+              <a href="#" class="btn btn-primary">Login</a>
+            </li>
+            <li>
+              <a href="#" class="wishlist">
+                <div class="badge-wrapper">
+                  <i class="fas fa-heart menu-icon"></i>
+                  <span class="badge badge-info">2</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="cart">
+                <div class="badge-wrapper">
+                  <i class="fas fa-shopping-cart menu-icon"></i>
+                  <span class="badge badge-info">3</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h3 class="txt-center fw-bold my-1">My Cart</h3>
+      <section class="cart-container">
+        <div class="cart-details">
+          <!-- Address -->
+          <div class="card">
+            <div class="card-body">
+              <p class="card-title h4">
+                Deliver to: <span class="fw-bold">Shivam Pandey</span>
+              </p>
+            </div>
+            <div class="card-content">
+              <p class="content txt-sm">
+                Akshya Nagar 1st Block 1st Cross, Rammurthy nagar,
+                Bangalore-560016
+              </p>
+            </div>
+            <div class="card-icons top-right">
+              <button><i class="fas fa-gear icon"></i></button>
+            </div>
+          </div>
+          <!-- Cart Items -->
+          <div class="card card-h">
+            <figure class="card-image">
+              <img
+                class="img-responsive"
+                src="https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/6101047624065-4?fmt=webp"
+                alt="Action Figure"
+              />
+            </figure>
+            <div class="card-body">
+              <div class="card-content">
+                <h3 class="card-title txt-semibold">
+                  Iron Man Talking Action Figure
+                </h3>
+                <small class="card-subtitle txt-grey">Action Figure</small>
+                <div class="quantity-container">
+                  <p>Qunatity:</p>
+                  <button class="btn">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                  <input
+                    type="number"
+                    class="input quantity-count"
+                    value="1"
+                    min="1"
+                    aria-label="count"
+                  />
+                  <button class="btn">
+                    <i class="fas fa-plus"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="card-price">
+                <span class="h3 txt-bold">$399.00</span>
+                <span class="h4 txt-light txt-striked txt-grey">$599.00</span>
+              </div>
+              <div class="card-buttons flex-column gap-05">
+                <button class="btn btn-secondary">Remove from Cart</button>
+                <button class="btn btn-outline">Move to Wishlist</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-h">
+            <figure class="card-image">
+              <img
+                class="img-responsive"
+                src="https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/2890041618870-1?fmt=webp"
+                alt="Costume"
+              />
+            </figure>
+            <div class="card-body">
+              <div class="card-content">
+                <h3 class="card-title txt-semibold">
+                  Iron Man Costume for Kids
+                </h3>
+                <small class="card-subtitle txt-grey">Costumes</small>
+                <div class="quantity-container">
+                  <p>Qunatity:</p>
+                  <button class="btn">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                  <input
+                    type="number"
+                    class="input quantity-count"
+                    value="1"
+                    min="1"
+                    aria-label="count"
+                  />
+                  <button class="btn">
+                    <i class="fas fa-plus"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="card-price">
+                <span class="h3 txt-bold">$399.00</span>
+                <span class="h4 txt-light txt-striked txt-grey">$599.00</span>
+              </div>
+              <div class="card-buttons flex-column gap-05">
+                <button class="btn btn-secondary">Remove from Cart</button>
+                <button class="btn btn-outline">Move to Wishlist</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-h">
+            <figure class="card-image">
+              <img
+                class="img-responsive"
+                src="https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/7200002377ZES?fmt=webp"
+                alt="T-Shirt"
+              />
+            </figure>
+            <div class="card-body">
+              <div class="card-content">
+                <h3 class="card-title txt-semibold">
+                  Iron Man, T-Shirt - Customizable
+                </h3>
+                <small class="card-subtitle txt-grey">T-Shirts & Tops</small>
+                <div class="quantity-container">
+                  <p>Qunatity:</p>
+                  <button class="btn">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                  <input
+                    type="number"
+                    class="input quantity-count"
+                    value="1"
+                    min="1"
+                    aria-label="count"
+                  />
+                  <button class="btn">
+                    <i class="fas fa-plus"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="card-price">
+                <span class="h3 txt-bold">$399.00</span>
+                <span class="h4 txt-light txt-striked txt-grey">$599.00</span>
+              </div>
+              <div class="card-buttons flex-column gap-05">
+                <button class="btn btn-secondary">Remove from Cart</button>
+                <button class="btn btn-outline">Move to Wishlist</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Cart Summary -->
+        <div class="cart-summary">
+          <p class="txt-md fw-exb py-2">Price Details</p>
+          <hr />
+          <div>
+            <div class="flex-row justify-sb py-2">
+              <p>Price (2 items)</p>
+              <p>$799.00</p>
+            </div>
+            <div class="flex-row justify-sb py-2">
+              <p>Discount</p>
+              <p>-$199.00</p>
+            </div>
+            <div class="flex-row justify-sb py-2">
+              <p>Delivery Charges</p>
+              <p>$99.00</p>
+            </div>
+          </div>
+          <hr />
+          <div class="flex-row justify-sb py-2">
+            <p class="fw-bold">Total Amount</p>
+            <p class="fw-bold">$699.00</p>
+          </div>
+          <hr />
+          <div class="py-2 txt-center">
+            You will save <span class="fw-bold">$100</span> on this order
+          </div>
+          <button class="btn btn-primary btn-full">Place Order</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer flex-column flex-center">
+      <h4>
+        Made with <span class="secondary-text-color">&lt;/&gt;</span> by Shivam
+        Pandey
+      </h4>
+      <ul class="gap-1 my-1">
+        <li>
+          <a
+            href="https://github.com/shivampandey0"
+            class="footer-social"
+            target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://twitter.com/ErShivamPandey"
+            class="footer-social"
+            target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/shivampandey0/"
+            class="footer-social"
+            target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </li>
+      </ul>
+      <div class="txt-small">
+        © 2022
+        <div class="nav-logo">
+          <span class="txt-sm">MARVEL</span><span class="txt-sm">KART</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
