@@ -1,0 +1,31 @@
+/* main container */
+.container {
+  min-height: 80vh;
+  margin: var(--scale-2);
+}
+
+/* card overrides */
+.card {
+  width: calc(var(--scale-6) * 3);
+}
+
+.card-image {
+  flex-basis: 60%;
+}
+
+.card-title {
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: var(--weight-bold);
+}
+
+.card-icons > button {
+  color: var(--primary);
+  opacity: 0.8;
+}
+
+@media screen and (max-width:600px) {
+    .card{
+        width: 60%;
+    }
+}
