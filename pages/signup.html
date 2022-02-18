@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Marvel UI Component Library -->
+    <link
+      rel="stylesheet"
+      href="https://marvel-ui.vercel.app/css/marvel-ui.css"
+    />
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="../style.css" />
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="../css/auth.css" />
+    <title>Register | Marvel-Kart</title>
+  </head>
+
+  <body>
+    <main class="full-container flex-row">
+      <section class="left-container">
+        <div class="flex-column flex-center px-2">
+          <p class="txt-lg fw-exb txt-center">Welcome to Marvel Kart</p>
+          <p class="txt-md txt-center">
+            Your one stop destinataion to shop all things Marvel!
+          </p>
+        </div>
+
+        <img
+          class="img-responsive"
+          src="../assets/deadpool.png"
+          alt="Deadpool"
+        />
+      </section>
+      <section class="right-container">
+        <div class="form-container">
+          <a href="../index.html" class="nav-logo" role="img">
+            <span>MARVEL</span
+            ><span>KART<i class="fa-solid fa-cart-shopping"></i></span>
+          </a>
+
+          <form class="px-2 py-2" action="#">
+            <!-- Name -->
+            <div class="input-row">
+              <div class="input-group">
+                <label class="required" for="f-name">First Name</label>
+                <input
+                  class="input"
+                  type="text"
+                  id="f-name"
+                  placeholder="First Name"
+                  required
+                />
+              </div>
+
+              <div class="input-group">
+                <label class="required" for="l-name">Last Name</label>
+                <input
+                  class="input"
+                  type="text"
+                  id="l-name"
+                  placeholder="Last Name"
+                  required
+                />
+              </div>
+            </div>
+            <!-- Identity -->
+            <div class="input-row">
+              <div class="input-group">
+                <label class="required" for="email">Email</label>
+                <input
+                  class="input"
+                  type="email"
+                  id="email"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+              <div class="input-group">
+                <label for="f-name">Phone</label>
+                <input
+                  id="phone"
+                  class="input"
+                  type="text"
+                  aria-label="text-input"
+                  placeholder="+91 1234 567 890"
+                  pattern="^(\+91)?\s?[1-9][0-9]{9}$"
+                />
+              </div>
+            </div>
+            <!-- Password -->
+            <div class="input-row">
+              <div class="input-group">
+                <label class="required" for="password">Password</label>
+                <div class="pass-toggle">
+                  <input
+                    class="input"
+                    type="text"
+                    id="password"
+                    placeholder="********"
+                    required
+                  />
+                  <i class="fas fa-eye-slash icon"></i>
+                </div>
+              </div>
+              <div class="input-group">
+                <label class="required" for="c-password"
+                  >Confirm Password</label
+                >
+                <div class="pass-toggle">
+                  <input
+                    class="input"
+                    type="text"
+                    id="c-password"
+                    placeholder="********"
+                    required
+                  />
+                  <i class="fas fa-eye-slash icon"></i>
+                </div>
+              </div>
+            </div>
+            <!-- acceptance -->
+            <div class="flex-row align-cntr input-group">
+              <input type="checkbox" id="terms" />
+              <label class="required" for="terms">
+                I agree to the
+                <a class="primary-link" href="#">Terms & Conditions</a>
+              </label>
+            </div>
+
+            <!-- Submit -->
+            <button class="btn btn-primary btn-full my-4" type="submit">
+              Create Account
+            </button>
+
+            <p class="fw-bold">
+              Already have an account?
+              <a class="primary-link" href="./login.html">Log in</a>
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
