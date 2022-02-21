@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="../assets/favicon.ico" />
     <!-- Marvel UI Component Library -->
     <link
       rel="stylesheet"
@@ -12,7 +14,7 @@
     <!-- Local CSS -->
     <link rel="stylesheet" href="../style.css" />
     <!-- Page CSS -->
-    <link rel="stylesheet" href="../css/products.css">
+    <link rel="stylesheet" href="../css/products.css" />
     <title>Products | Marvel-Kart</title>
   </head>
 
@@ -77,22 +79,25 @@
         </div>
         <!-- Filters Group -->
         <section class="filters-group">
-          <div class="price-filter my-2">
+          <div class="slider-container">
             <h4 class="fw-exb">Price</h4>
-
             <input
-              class="slider"
               type="range"
-              min="100"
+              min="0"
               max="10000"
-              step="any"
+              aria-label="input-range-slider"
+              step="2500"
+              value="2500"
               list="tickmarks"
+              class="slider"
             />
-            <div class="price-indicator">
-              <p>100</p>
-              <p>5k</p>
-              <p>10k</p>
-            </div>
+            <datalist id="tickmarks">
+              <option value="0"></option>
+              <option value="2500"></option>
+              <option value="5000"></option>
+              <option value="7500"></option>
+              <option value="10000"></option>
+            </datalist>
           </div>
 
           <div class="category-filter my-2">
@@ -122,19 +127,19 @@
 
             <ul class="py-2 px-2">
               <li class="filter-list-item">
-                <input type="radio" name="review" id="review-4" />
+                <input type="radio" class="radio" name="review" id="review-4" />
                 <label for="review-4">4 Stars & above</label>
               </li>
               <li class="filter-list-item">
-                <input type="radio" name="review" id="review-3" />
+                <input type="radio" class="radio" name="review" id="review-3" />
                 <label for="review-3">3 Stars & above</label>
               </li>
               <li class="filter-list-item">
-                <input type="radio" name="review" id="review-2" />
+                <input type="radio" class="radio" name="review" id="review-2" />
                 <label for="review-2">2 Stars & above</label>
               </li>
               <li class="filter-list-item">
-                <input type="radio" name="review" id="review-1" />
+                <input type="radio" class="radio" name="review" id="review-1" />
                 <label for="review-1">1 Stars & above</label>
               </li>
             </ul>
@@ -144,11 +149,17 @@
             <h4 class="fw-exb">Sort by</h4>
             <ul class="px-2 py-2">
               <li class="filter-list-item">
-                <input type="radio" name="sort" id="low-high" />
+                <input
+                  type="radio"
+                  class="radio"
+                  class="radio"
+                  name="sort"
+                  id="low-high"
+                />
                 <label for="low-high">Price - Low to High</label>
               </li>
               <li class="filter-list-item">
-                <input type="radio" name="sort" id="high-low" />
+                <input type="radio" class="radio" name="sort" id="high-low" />
                 <label for="high-low">Price - High to Low</label>
               </li>
             </ul>
@@ -174,12 +185,12 @@
               <small class="card-subtitle txt-grey">Action Figure</small>
             </div>
             <div class="card-price">
-              <span class="h3 txt-bold">$399.00</span>
-              <span class="h4 txt-light txt-striked txt-grey">$599.00</span>
+              <span class="h3 txt-bold">$39.00</span>
+              <span class="h4 txt-light txt-striked txt-grey">$89.00</span>
             </div>
             <div class="card-buttons flex-column gap-05">
-              <button class="btn btn-outline">
-                <i class="fas fa-shopping-cart icon"></i>Add to cart
+              <button class="btn btn-primary">
+                <i class="fas fa-shopping-cart icon"></i>Go to cart
               </button>
             </div>
             <div class="card-icons top-right">
@@ -201,8 +212,35 @@
               <small class="card-subtitle txt-grey">T-Shirts & Tops</small>
             </div>
             <div class="card-price">
-              <span class="h3 txt-bold">$399.00</span>
-              <span class="h4 txt-light txt-striked txt-grey">$599.00</span>
+              <span class="h3 txt-bold">$29.00</span>
+              <span class="h4 txt-light txt-striked txt-grey">$69.00</span>
+            </div>
+            <div class="card-buttons flex-column gap-05">
+              <button class="btn btn-outline">
+                <i class="fas fa-shopping-cart icon"></i>Add to cart
+              </button>
+            </div>
+            <div class="card-icons top-right">
+              <button><i class="fas fa-heart icon"></i></button>
+            </div>
+            <span class="badge badge-info card-badge top-left">New</span>
+          </div>
+
+          <div class="card">
+            <figure class="card-image">
+              <img
+                class="img-responsive"
+                src="https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/6811105743297?fmt=webp"
+                alt="nike"
+              />
+            </figure>
+            <div class="card-body">
+              <p class="card-title">Iron Man Invincible</p>
+              <small class="card-subtitle txt-grey">Action Figure</small>
+            </div>
+            <div class="card-price">
+              <span class="h3 txt-bold">$229.00</span>
+              <span class="h4 txt-light txt-striked txt-grey">$399.00</span>
             </div>
             <div class="card-buttons flex-column gap-05">
               <button class="btn btn-outline">
@@ -228,8 +266,8 @@
               <small class="card-subtitle txt-grey">Costumes</small>
             </div>
             <div class="card-price">
-              <span class="h3 txt-bold">$399.00</span>
-              <span class="h4 txt-light txt-striked txt-grey">$599.00</span>
+              <span class="h3 txt-bold">$59.00</span>
+              <span class="h4 txt-light txt-striked txt-grey">$99.00</span>
             </div>
             <div class="card-buttons flex-column gap-05">
               <button class="btn btn-outline">
@@ -246,17 +284,17 @@
             <figure class="card-image">
               <img
                 class="img-responsive"
-                src="https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/2890041618870-1?fmt=webp"
-                alt="nike"
+                src="https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/7200001407ZES?fmt=webp"
+                alt="T-Shirt"
               />
             </figure>
             <div class="card-body">
-              <p class="card-title">Iron Man Costume for Kids</p>
-              <small class="card-subtitle txt-grey">Costumes</small>
+              <p class="card-title">''I Am Iron Man!'' Text Emoji Tee</p>
+              <small class="card-subtitle txt-grey">T-Shirts & Tops</small>
             </div>
             <div class="card-price">
-              <span class="h3 txt-bold">$399.00</span>
-              <span class="h4 txt-light txt-striked txt-grey">$599.00</span>
+              <span class="h3 txt-bold">$24.99</span>
+              <span class="h4 txt-light txt-striked txt-grey">$49.00</span>
             </div>
             <div class="card-buttons flex-column gap-05">
               <button class="btn btn-outline">
@@ -270,20 +308,26 @@
           </div>
 
           <div class="card">
+            <div class="card-overlay">
+              <p class="overlay-text">Out Of Stock</p>
+            </div>
+
             <figure class="card-image">
               <img
                 class="img-responsive"
-                src="https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/2890041618870-1?fmt=webp"
-                alt="nike"
+                src="https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/6811105743516?fmt=webp"
+                alt="Ironman"
               />
             </figure>
             <div class="card-body">
-              <p class="card-title">Iron Man Costume for Kids</p>
-              <small class="card-subtitle txt-grey">Costumes</small>
+              <p class="card-title">
+                Iron Man Pewter Mini Figurine by Royal Selangor
+              </p>
+              <small class="card-subtitle txt-grey">Action Figure</small>
             </div>
             <div class="card-price">
-              <span class="h3 txt-bold">$399.00</span>
-              <span class="h4 txt-light txt-striked txt-grey">$599.00</span>
+              <span class="h3 txt-bold">$49.00</span>
+              <span class="h4 txt-light txt-striked txt-grey">$79.00</span>
             </div>
             <div class="card-buttons flex-column gap-05">
               <button class="btn btn-outline">
@@ -337,5 +381,6 @@
         </div>
       </div>
     </footer>
+    <script src="../js/navbar.js"></script>
   </body>
 </html>
