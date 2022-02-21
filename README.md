@@ -27,4 +27,4 @@ Check out the currently live pages here:
 
 ## Marvel-Kart E-commerce Store Overview
 
-#### Todo
+![preview](./demo.gif)
